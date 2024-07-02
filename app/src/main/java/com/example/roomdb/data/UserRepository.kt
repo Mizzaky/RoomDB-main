@@ -38,7 +38,7 @@ class UserRepository {
             }
         }
         fun deleteData(context: Context,user: User){
-           database = initializeDatabase(context)
+           database = initializeDatabase(context);
             CoroutineScope(IO).launch {
                 database!!.userDao().deleteData(user)
             }
