@@ -37,6 +37,8 @@ class UserRepository {
                 database!!.userDao().updateData(user)
             }
         }
+
+        //new feature added.. git test
         fun deleteData(context: Context,user: User){
            database = initializeDatabase(context)
             CoroutineScope(IO).launch {
