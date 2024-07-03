@@ -5,14 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:background="@color/Violet"
-        />
+        android:background="@color/Violet" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar"
@@ -21,7 +21,6 @@
         android:background="@color/Violet"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:menu="@menu/top_bar"
         app:title="RoomDB"
         app:titleTextColor="@color/white" />
 

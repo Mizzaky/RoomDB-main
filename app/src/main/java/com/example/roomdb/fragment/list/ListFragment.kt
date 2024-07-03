@@ -27,8 +27,7 @@ import com.example.roomdb.RvAdapter
 import com.example.roomdb.data.UserViewModel
 import com.example.roomdb.databinding.FragmentListBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
-
-abstract class ListFragment : Fragment(),MenuProvider {
+class ListFragment : Fragment() {
     private lateinit var navController: NavController
     private lateinit var binding: FragmentListBinding
     private lateinit var rvAdapter: RvAdapter
@@ -114,6 +113,7 @@ abstract class ListFragment : Fragment(),MenuProvider {
                 bottomSheet.show()
             }
         }
+
 }
 
 
